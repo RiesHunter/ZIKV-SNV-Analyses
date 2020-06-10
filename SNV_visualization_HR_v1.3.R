@@ -466,5 +466,4 @@ CC.alt.facet <- ggplot(alt.dataCC.factor,aes(POS,AF)) +
 
 #### Figure Layout ####
 grid.arrange(CC.mo.facet, CC.mq.facet, CC.alt.facet, nrow = 3)
-
 # Save figures as 700x700 in RStudio
