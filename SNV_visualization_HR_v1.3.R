@@ -23,9 +23,9 @@ if(!require(grid)){
 #### Mouse Passage 10 ####
 ## Create list of all .vcf files for Passage Number 10 
 setwd("~/Documents/Research/1-Friedrich/1-ZIKV-SNVs/Kasen-Tutorial/Datasets/SCP_refaligned_vcf")
-mo.myvcf10 <- dir(pattern="SCP10_")    
-mo.n10 <- length(mo.myvcf10)             
-mo.mylist10 <- vector("list",mo.n10)     
+mo.myvcf10 <- dir(pattern="SCP10_")
+mo.n10 <- length(mo.myvcf10)
+mo.mylist10 <- vector("list",mo.n10)
 
 ## Read all the tables in myvcf and apply to mylist10
 for (i in 1:mo.n10) {mo.mylist10[[i]] <- read.table(mo.myvcf10[i])} 
@@ -80,9 +80,9 @@ mo.data10.factor$REP <- as.factor(mo.data10.factor$REP)
 #### Mosquito Passage 10 ####
 ## Create list of all .vcf files for Passage Number 10 
 setwd("~/Documents/Research/1-Friedrich/1-ZIKV-SNVs/Kasen-Tutorial/Datasets/MP_refaligned_vcf")
-mq.myvcf10 <- dir(pattern="MP10_")    
-mq.n10 <- length(mq.myvcf10)             
-mq.mylist10 <- vector("list",mq.n10)     
+mq.myvcf10 <- dir(pattern="MP10_")
+mq.n10 <- length(mq.myvcf10)
+mq.mylist10 <- vector("list",mq.n10)
 
 ## Read all the tables in myvcf and apply to mylist10
 for (i in 1:mq.n10) {mq.mylist10[[i]] <- read.table(mq.myvcf10[i])} 
@@ -253,9 +253,9 @@ grid.arrange(TEN.mo.facet, TEN.mq.facet, TEN.alt.facet, nrow = 3) # 800x700
 #### Mouse Passage CC ####
 ## Create list of all .vcf files for Passage Number CC 
 setwd("~/Documents/Research/1-Friedrich/1-ZIKV-SNVs/Kasen-Tutorial/Datasets/SCP_refaligned_vcf")
-mo.myvcfCC <- dir(pattern="SCPCC_")    
-mo.nCC <- length(mo.myvcfCC)             
-mo.mylistCC <- vector("list",mo.nCC)     
+mo.myvcfCC <- dir(pattern="SCPCC_")
+mo.nCC <- length(mo.myvcfCC)
+mo.mylistCC <- vector("list",mo.nCC)
 
 ## Read all the tables in myvcf and apply to mylistCC
 for (i in 1:mo.nCC) {mo.mylistCC[[i]] <- read.table(mo.myvcfCC[i])} 
@@ -310,9 +310,9 @@ mo.dataCC.factor$REP <- as.factor(mo.dataCC.factor$REP)
 #### Mosquito Passage CC ####
 ## Create list of all .vcf files for Passage Number CC 
 setwd("~/Documents/Research/1-Friedrich/1-ZIKV-SNVs/Kasen-Tutorial/Datasets/MP_refaligned_vcf")
-mq.myvcfCC <- dir(pattern="MPCC_")    
-mq.nCC <- length(mq.myvcfCC)             
-mq.mylistCC <- vector("list",mq.nCC)     
+mq.myvcfCC <- dir(pattern="MPCC_")
+mq.nCC <- length(mq.myvcfCC)
+mq.mylistCC <- vector("list",mq.nCC)
 
 ## Read all the tables in myvcf and apply to mylistCC
 for (i in 1:mq.nCC) {mq.mylistCC[[i]] <- read.table(mq.myvcfCC[i])} 
@@ -367,9 +367,9 @@ mq.dataCC.factor$REP <- as.factor(mq.dataCC.factor$REP)
 #### Alternate Passage CC ####
 ## Create list of all .vcf files for Passage Number CC 
 setwd("~/Documents/Research/1-Friedrich/1-ZIKV-SNVs/Kasen-Tutorial/Datasets/SCP_refaligned_vcf")
-alt.myvcfCC <- dir(pattern="SCPCC_")    
-alt.nCC <- length(alt.myvcfCC)             
-alt.mylistCC <- vector("list",alt.nCC)     
+alt.myvcfCC <- dir(pattern="SCPCC_")
+alt.nCC <- length(alt.myvcfCC)
+alt.mylistCC <- vector("list",alt.nCC)
 
 ## Read all the tables in myvcf and apply to mylistCC
 for (i in 1:alt.nCC) {alt.mylistCC[[i]] <- read.table(alt.myvcfCC[i])} 
